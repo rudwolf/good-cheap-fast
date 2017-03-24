@@ -101,3 +101,24 @@ input.cmn-toggle-round:checked + label:after {
   margin-left: 60px;
 }
 
+/* ============================================================
+  TRANSLATION
+============================================================ */
+
+.language-select {
+  /*font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;*/
+  font-family: 'Oswald', sans-serif;
+  color: rgba(0,0,0,.5);
+  font-size: 18px;
+  overflow: auto;
+}
+
+.language-select a { display: block; cursor: pointer; color: rgba(0,0,0,.5); }
+
+.language-select a i { vertical-align: middle; }
+
+.language-select a span { vertical-align: middle; }
+
+footer p {text-align: center;}
+footer small {font-size: 11px;}
+footer small a {color: #00f;}

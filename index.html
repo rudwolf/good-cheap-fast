@@ -12,6 +12,7 @@
   <!-- css -->
   <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="css/flags.min.css" rel="stylesheet">
   <link href="css/base.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 
@@ -21,6 +22,12 @@
 </head>
 
 <body>
+  <header>
+  	<div class="language-select">
+  		<a class="lang-switch" data-lang="pt_BR"><i class="flag-sm flag-sm-BR"></i> <span class="lang-name">Portuguese (Brazil)</span></a>
+  		<a class="lang-switch" data-lang="en_US"><i class="flag-sm flag-sm-US"></i> <span class="lang-name">English</span></a>
+  	</div>
+  </header>
   <main>
     <div class="switch-group">
       <div class="switch">
@@ -28,7 +35,7 @@
         <label for="good"></label>
       </div>
 
-      <h1 class="switch-label">Good</h1>
+      <h1 class="switch-label" data-text="Good"></h1>
     </div>
 
     <div class="switch-group">
@@ -37,7 +44,7 @@
         <label for="cheap"></label>
       </div>
 
-      <h1 class="switch-label">Cheap</h1>
+      <h1 class="switch-label" data-text="Cheap"></h1>
     </div>
 
     <div class="switch-group">
@@ -46,27 +53,23 @@
         <label for="fast"></label>
       </div>
 
-      <h1 class="switch-label">Fast</h1>
+      <h1 class="switch-label" data-text="Fast"></h1>
     </div>
   </main>
 
   <footer>
-    <a href="http://callmenick.com/post/css-toggle-switch-examples"><i class="fa fa-toggle-on"></i></a>
-    <a href="https://www.reddit.com/r/Design/comments/5rb12d/this_is_too_good/"><i class="fa fa-reddit"></i></a>
-    <a href="http://github.com/scotato/good-cheap-fast"><i class="fa fa-github"></i></a>
-    <a href="http://twitter.com/scotato"><i class="fa fa-twitter"></i></a>
+    <p>
+      <a href="http://github.com/rudwolf/good-cheap-fast-multilang"><i class="fa fa-github"></i></a>
+      <a href="http://twitter.com/rudwolf"><i class="fa fa-twitter"></i></a>
+    </p>
+    <p>
+      <small>Forked from <a href="https://github.com/scotato/good-cheap-fast">scotato/good-cheap-fast</a></small>
+    </p>
   </footer>
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-91266711-1', 'auto');
-    ga('send', 'pageview');
-
-  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="js/pomo.min.js"></script>
+  <script src="js/translation.js"></script>
 
 </body>
 </html>
